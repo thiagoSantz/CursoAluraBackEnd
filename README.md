@@ -38,15 +38,23 @@ Este projeto utiliza o Express para construir a API RESTful e o MongoDB para arm
 
 ## **Estrutura do Projeto**
 
-├── server.js             # Arquivo principal do servidor
+├── server.js             
+# Arquivo principal do servidor
 ├── src/
-│   ├── routes/           # Configuração das rotas
-│   ├── controllers/      # Lógica de negócios (controladores)
-│   ├── models/           # Modelos e integração com MongoDB
-│   ├── config/           # Configuração do banco de dados
-├── uploads/              # Diretório para uploads de imagens
-├── package.json          # Configuração do Node.js
-└── .env                  # Variáveis de ambiente
+│   ├── routes/           
+# Configuração das rotas
+│   ├── controllers/      
+# Lógica de negócios (controladores)
+│   ├── models/          
+# Modelos e integração com MongoDB
+│   ├── config/           
+# Configuração do banco de dados
+├── uploads/             
+# Diretório para uploads de imagens
+├── package.json          
+# Configuração do Node.js
+└── .env                  
+# Variáveis de ambiente
 
 ---
 
