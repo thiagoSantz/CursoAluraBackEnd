@@ -90,3 +90,27 @@ Adicione o Remote: Use o comando git remote add origin <URL-do-Repositório> par
 Exemplo:
 
 git remote add origin https://github.com/seu-usuario/seu-reposit
+
+Como enviar os commits para o repositório remoto?
+Depois que seus repositórios, local e remoto, estão vinculados, você pode enviar seus commits para o repositório remoto:
+
+Crie um Arquivo README (Opcional): Se ainda não tiver um arquivo para capa do seu repositório, que explique o que é o projeto, suas funcionalidades, pré-requisitos etc., você pode criar um nesta etapa.
+Para criar o arquivo você pode iniciar com o seguinte comando:
+
+  echo "# Meu Projeto" >> README.md
+E para saber mais informações sobre como escrevê-lo, confira nosso artigo Como escrever um README incrível no seu Github.
+
+Adicione e Faça o Commit: No terminal, use os comandos git add e git commit para adicionar e confirmar as alterações.
+
+git add README.md
+git commit -m "Adicionando arquivo README"
+Defina o Nome da Branch Principal: Se você está usando a versão mais recente do Git, a branch principal é chamada "main". Use o comando git branch -M main para definir isso.
+
+git branch -M main
+Envie para o Repositório Remoto: Use o comando git push -u origin main para enviar os commits para o repositório remoto.
+
+git push -u origin main
+Dica: Todos esses comandos com os campos preenchidos certinhos na tela do Github:
+
+Tela do Github que surge assim que você clica no botão Create Repository. Nela está presente 3 campos, onde o primeiro é sobre “create a new repository on the command line” seguidos dos seus respectivos comandos; na segunda seção temos “push an existing repository from the command line”; e por fim, temos “or import code from another repository”, todos seguidos dos seus respectivos comandos de como fazer
+Agora, seus commits locais estão refletidos no repositório remoto no GitHub. Este processo é crucial para a colaboração em equipe e para manter um histórico centralizado do seu projeto. Lembre-se de adaptar as URLs e nomes do repositório conforme necessário.
