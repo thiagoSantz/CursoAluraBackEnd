@@ -21,23 +21,42 @@ Certifique-se de ter instalado:
 - Um editor de código, como [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Como Configurar
-1. **Clone este repositório**:
-   ```bash
-   git clone <URL_DO_REPOSITORIO>
-   cd <NOME_DA_PASTA>
+Clone este repositório:
+Use o seguinte comando no terminal para clonar o repositório:
 
-2. Instale as dependências:
+bash
+Copiar código
+git clone <URL_DO_REPOSITORIO>
+cd <NOME_DA_PASTA>
+
+## Instale as dependências:
+Rode o comando abaixo para instalar todas as bibliotecas necessárias:
+
+bash
+Copiar código
 npm install
 
-3. Configure as variáveis de ambiente: Crie um arquivo .env na raiz do projeto e insira sua string de conexão com o MongoDB:
+## Configure as variáveis de ambiente:
+Crie um arquivo .env na raiz do projeto e insira sua string de conexão com o MongoDB:
+
+env
+Copiar código
+
 STRING_CONEXAO=mongodb+srv://<usuario>:<senha>@<cluster>.mongodb.net/<nome_do_banco>
 
-4. Inicie o servidor:
+## Inicie o servidor:
+Utilize o comando a seguir para iniciar o servidor em modo de desenvolvimento:
+
+bash
+Copiar código
 npm run dev
 
-5. Acesse o servidor: O servidor estará rodando em http://localhost:3000.
+## Acesse o servidor:
+Abra o navegador e vá para o endereço:
+http://localhost:3000.
 
 Rotas da API
+
 Listar Posts
 GET /posts
 Descrição: Retorna todos os posts do banco de dados.
