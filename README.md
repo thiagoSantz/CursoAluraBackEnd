@@ -58,8 +58,8 @@ As principais dependências deste projeto incluem:
 
 ---
 
-## **Licença**
-Este projeto está licenciado sob a [AGPL-3.0](https://opensource.org/licenses/AGPL-3.0).
+## Licença
+Este projeto está licenciado sob a [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.html).
 
 ---
 
