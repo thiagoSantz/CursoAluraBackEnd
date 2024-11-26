@@ -1,0 +1,92 @@
+Como executar o Git?
+Depois de instalar o Git, você pode começar a usar o Git em um projeto. É só seguir essas etapas:
+
+1. Configure seu nome de usuário e e-mail:
+
+O Git registra quem fez cada alteração no código. Portanto, é importante configurar seu nome de usuário e e-mail. Use os comandos, no terminal:
+git config --global user.name "Seu Nome"
+git config --global user.email "seu@email.com"
+2. Crie um Repositório Git:
+
+Para começar a rastrear seu código, crie um repositório Git em seu projeto. Navegue até a pasta do seu projeto e execute:
+git init
+3. Adicione Arquivos ao Controle de Versão:
+
+Use o comando git add para adicionar arquivos ao "staging area", que é onde você prepara os arquivos para serem “commitados” ou salvos.
+git add nome-do-arquivo
+4. Faça um Commit:
+
+Um commit é um snapshot de suas alterações. Use o comando git commit para criar um commit com uma mensagem descritiva do que foi alterado no projeto.
+git commit -m "Sua mensagem de commit aqui"
+5. Visualize o Histórico de Commits:
+
+Use git log para ver o histórico de commits no repositório.
+git log
+Essas são as etapas fundamentais para começar a usar o Git. Com esses comandos, você pode iniciar o controle de versão de seu código e colaborar em projetos com outras pessoas desenvolvedoras.
+
+Quais são os principais comandos do Git?
+O Git é uma ferramenta bastante robusta e oferece diversos utilitários para gerenciar as versões de um projeto em linha de comando. Confira os principais comandos da ferramenta:
+
+Git init;
+Git clone;
+Git status;
+Git add;
+Git commit;
+Git log;
+Git branch;
+Git checkout;
+Git diff.
+
+Alterando commits (reset, revert, --amend)
+Em desenvolvimento de software, é bem comum lidarmos com bugs e ver a necessidade de voltar algumas alterações e, isso envolvendo o Git, não é diferente.
+
+Então, podemos se deparar com a necessidade de fazer ajustes em commits anteriores ou desfazer mudanças já registradas.
+
+Existem três comandos principais que permitem essas operações: reset, revert e --amend. Vamos dar uma olhada em como eles funcionam:
+
+1. Reset: Desfazendo Commits
+
+O comando git reset permite desfazer commits anteriores e mover a branch para um commit anterior. Para isso, você precisa especificar o commit para onde deseja reverter.
+
+Exemplo:
+
+git reset HEAD~1
+Neste caso, HEAD~1 significa "um commit antes do último commit". Isso moverá a branch para um commit atrás, desfazendo o último commit mais recente
+
+2. Revert: Criando Novos Commits de Reversão
+
+O comando git revert é usado para criar um novo commit que desfaz as alterações de um commit específico. Em vez de remover o commit original, ele adiciona um novo commit de reversão ao histórico.
+
+Exemplo:
+
+git revert HEAD~1
+Isso criará um novo commit que desfaz as alterações introduzidas pelo commit anterior.
+
+A imagem traz uma representação do histórico de commits, onde o segundo commit possui um destaque vermelho com a letra X indicando que há um erro. Além disso, este commit está apontando através de uma seta para o segundo commit a sua frente simbolizado por um círculo com a tonalidade azul.
+3. --amend: Modificando o Último Commit
+
+O comando git commit --amend permite fazer modificações no último commit, como adicionar ou editar mensagens de commit ou incluir arquivos esquecidos.
+
+Exemplo:
+
+git commit --amend -m "Nova mensagem de commit"
+Isso altera a mensagem do último commit.
+
+ A imagem traz uma representação do histórico de commits, onde há destaque na tonalidade verde para o commit mais recente, sinalizando que houve uma modificação neste commit
+Esses comandos são úteis para ajustar o histórico do seu projeto, mas lembre-se de que devem ser usados com cuidado, especialmente quando você já compartilhou seu trabalho com outros desenvolvedores.
+
+Compreender a posição do HEAD, que aponta para o commit atual, é fundamental para evitar conflitos em seu repositório Git.
+
+Como linkar os repositórios remoto e local?
+Depois de criar um repositório no GitHub, é essencial conectar seu repositório local a ele para que você possa enviar suas alterações para o repositório remoto.
+
+Aqui está um passo a passo, inspirado no tutorial fornecido pelo GitHub, assim que você clica em “Create Repository”:
+
+Abra o Terminal: Se estiver usando um sistema Unix (Linux ou macOS), abra o terminal de comandos, já caso estiver utilizando Windows, abra o Git Bash no Windows.
+Navegue até o Diretório do Projeto: Use o comando cd <caminho/do/seu/repositorio> para navegar até o diretório do seu projeto local.
+Inicie um Repositório Git Local: Se o seu projeto ainda não é um repositório Git, use o comando git init para iniciá-lo.
+Adicione o Remote: Use o comando git remote add origin <URL-do-Repositório> para adicionar o repositório remoto como um "remote" chamado "origin".
+
+Exemplo:
+
+git remote add origin https://github.com/seu-usuario/seu-reposit
