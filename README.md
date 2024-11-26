@@ -1,6 +1,6 @@
 # Gerenciador de Posts com Node.js e MongoDB
 
-Este proje# **Servidor Node.js com Express e MongoDB**
+Este projeto **Servidor Node.js com Express e MongoDB**
 
 Este é um servidor básico criado com Node.js, Express e MongoDB. Ele permite criar, listar e armazenar posts no banco de dados, além de fazer upload de imagens.
 
@@ -39,7 +39,7 @@ Este projeto utiliza o Express para construir a API RESTful e o MongoDB para arm
 ## **Estrutura do Projeto**
 
 ├── server.js             
-# Arquivo principal do servidor
+* Arquivo principal do servidor
 ├── src/
 │   ├── routes/           
 # Configuração das rotas
