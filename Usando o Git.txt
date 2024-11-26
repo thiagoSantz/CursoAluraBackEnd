@@ -63,6 +63,7 @@ git revert HEAD~1
 Isso criará um novo commit que desfaz as alterações introduzidas pelo commit anterior.
 
 A imagem traz uma representação do histórico de commits, onde o segundo commit possui um destaque vermelho com a letra X indicando que há um erro. Além disso, este commit está apontando através de uma seta para o segundo commit a sua frente simbolizado por um círculo com a tonalidade azul.
+
 3. --amend: Modificando o Último Commit
 
 O comando git commit --amend permite fazer modificações no último commit, como adicionar ou editar mensagens de commit ou incluir arquivos esquecidos.
@@ -114,3 +115,43 @@ Dica: Todos esses comandos com os campos preenchidos certinhos na tela do Github
 
 Tela do Github que surge assim que você clica no botão Create Repository. Nela está presente 3 campos, onde o primeiro é sobre “create a new repository on the command line” seguidos dos seus respectivos comandos; na segunda seção temos “push an existing repository from the command line”; e por fim, temos “or import code from another repository”, todos seguidos dos seus respectivos comandos de como fazer
 Agora, seus commits locais estão refletidos no repositório remoto no GitHub. Este processo é crucial para a colaboração em equipe e para manter um histórico centralizado do seu projeto. Lembre-se de adaptar as URLs e nomes do repositório conforme necessário.
+
+
+git init
+Inicializa um repositório Git no diretório atual.
+
+git clone <url>
+Clona um repositório remoto para o seu computador.
+
+git status
+Verifica o estado atual do repositório (arquivos modificados, não rastreados, etc.).
+
+git add <arquivo>
+Adiciona um arquivo específico ao stage (preparando para commit).
+
+git add .
+Adiciona todos os arquivos modificados ao stage.
+
+git commit -m "mensagem"
+Cria um commit com as alterações no stage e uma mensagem descritiva.
+
+git pull
+Baixa as atualizações do repositório remoto e faz o merge com o local.
+
+git push
+Envia suas alterações locais para o repositório remoto.
+
+git branch
+Exibe ou cria branches (ramificações) no seu repositório.
+
+git checkout <branch>
+Muda para a branch especificada.
+
+git merge <branch>
+Mescla a branch especificada com a branch atual.
+
+git remote add origin <url>
+Conecta seu repositório local a um repositório remoto.
+
+git log
+Exibe o histórico de commits.
